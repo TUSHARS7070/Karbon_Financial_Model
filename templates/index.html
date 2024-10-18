@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Analysis - Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Model Upload</h1>
+        <form action="/" method="POST" enctype="multipart/form-data">
+            <label for="file-upload">Upload your Data (JSON file):</label>
+            <input type="file" id="file-upload" name="file" accept=".json" required>
+            <button type="submit">Upload The File</button>
+        </form>
+    </div>
+</body>
+</html>
